@@ -54,6 +54,40 @@ allStudents.push(myStudent)
 const ahmedStudent = {
     name:'ahmed',
     isStudent:true,
-    
+    email: 'ahmed@gmail.com',
+    phoneNumber:541848594
 }
-console.log(allStudents.length)
+
+allStudents.push(ahmedStudent)
+
+// console.log(allStudents[1].name)
+
+
+for(let oneStudent of allStudents){
+    console.log(oneStudent.name + ' Just asked a good question')
+}
+
+
+
+for(let i =0; i< allStudents.length; i++){
+    console.log(allStudents[i].email)
+}
+
+
+// for(let k in myStudent){
+//     console.log(k, myStudent[k])
+// }
+
+
+
+allStudents.forEach((oneStudent)=>{
+    console.log(oneStudent.name + ' Just asked a good question')
+})
+
+
+
+
+console.log('------')
+
+
+console.log(myStudent['name'])
